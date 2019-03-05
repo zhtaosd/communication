@@ -17,4 +17,11 @@ public class Observable<T> {
     public <R> Observable<R> map(Function<? super T,? extends R> function){
         return new Observable<>(new OnSubscribeLift(onSubscribe,function));
     }
+
+    public  Observable<T> subScribeMain(){
+        return creat(new OnSubscibeMain<T>(this));
+    }
+    public  Observable<T> subScribeIO(){
+        return creat(new OnSubscibeIO<T>(this));
+    }
 }

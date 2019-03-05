@@ -13,4 +13,8 @@ public class Observable<T> {
     public void subScribe(Observer<? super T> subScribe){
         onSubscribe.subscribe(subScribe);
     }
+
+    public <R> Observable<R> map(Function<? super T,? extends R> function){
+        return new Observable<>(new OnSubscribeLift(onSubscribe,function));
+    }
 }

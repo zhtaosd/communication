@@ -1,1 +1,1 @@
-include ':app', ':hermesuse', ':rxjava'
+include ':app', ':hermesuse', ':rxjava', ':bigimage'

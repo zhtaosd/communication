@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bigimage" />
             <option value="$PROJECT_DIR$/hermesuse" />
             <option value="$PROJECT_DIR$/rxjava" />
           </set>

@@ -22,6 +22,6 @@ public class Md5Utils {
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
-        return null;
+        return buffer.toString();
     }
 }

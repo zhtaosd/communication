@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/bigimage" />
             <option value="$PROJECT_DIR$/fielddownload" />
             <option value="$PROJECT_DIR$/hermesuse" />
+            <option value="$PROJECT_DIR$/http" />
             <option value="$PROJECT_DIR$/networkapp" />
             <option value="$PROJECT_DIR$/rxjava" />
           </set>

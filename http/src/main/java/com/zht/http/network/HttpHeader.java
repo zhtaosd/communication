@@ -1,7 +1,11 @@
 package com.zht.http.network;
 
+import android.support.annotation.NonNull;
+
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class HttpHeader implements NameValueMap{
 
@@ -116,5 +120,70 @@ public class HttpHeader implements NameValueMap{
     @Override
     public void setAll(Map<String, String> map) {
         mMap.putAll(map);
+    }
+
+    @Override
+    public int size() {
+        return mMap.size();
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return mMap.isEmpty();
+    }
+
+    @Override
+    public boolean containsKey(@androidx.annotation.Nullable Object key) {
+        return false;
+    }
+
+    @Override
+    public boolean containsValue(@androidx.annotation.Nullable Object value) {
+        return false;
+    }
+
+    @androidx.annotation.Nullable
+    @Override
+    public Object get(@androidx.annotation.Nullable Object key) {
+        return null;
+    }
+
+    @androidx.annotation.Nullable
+    @Override
+    public Object put(@androidx.annotation.NonNull Object key, @androidx.annotation.NonNull Object value) {
+        return null;
+    }
+
+    @androidx.annotation.Nullable
+    @Override
+    public Object remove(@androidx.annotation.Nullable Object key) {
+        return null;
+    }
+
+    @Override
+    public void putAll(@androidx.annotation.NonNull @NonNull Map m) {
+
+    }
+
+    @Override
+    public void clear() {
+
+    }
+
+    @Override
+    public Set<String> keySet() {
+        return mMap.keySet();
+    }
+
+
+    @Override
+    public Collection<String> values() {
+        return mMap.values();
+    }
+
+
+    @Override
+    public Set<Map.Entry<String, String>> entrySet() {
+        return mMap.entrySet();
     }
 }

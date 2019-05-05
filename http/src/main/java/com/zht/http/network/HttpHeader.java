@@ -133,35 +133,34 @@ public class HttpHeader implements NameValueMap{
     }
 
     @Override
-    public boolean containsKey(@androidx.annotation.Nullable Object key) {
+    public boolean containsKey( Object key) {
         return false;
     }
 
     @Override
-    public boolean containsValue(@androidx.annotation.Nullable Object value) {
+    public boolean containsValue( Object value) {
         return false;
     }
 
-    @androidx.annotation.Nullable
+
     @Override
-    public Object get(@androidx.annotation.Nullable Object key) {
+    public Object get( Object key) {
         return null;
     }
 
-    @androidx.annotation.Nullable
-    @Override
-    public Object put(@androidx.annotation.NonNull Object key, @androidx.annotation.NonNull Object value) {
-        return null;
-    }
 
-    @androidx.annotation.Nullable
     @Override
-    public Object remove(@androidx.annotation.Nullable Object key) {
+    public Object put( Object key,  Object value) {
         return null;
     }
 
     @Override
-    public void putAll(@androidx.annotation.NonNull @NonNull Map m) {
+    public Object remove( Object key) {
+        return null;
+    }
+
+    @Override
+    public void putAll( @NonNull Map m) {
 
     }
 

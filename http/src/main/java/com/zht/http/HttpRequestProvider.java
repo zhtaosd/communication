@@ -4,6 +4,7 @@ import com.zht.http.network.HttpMethod;
 import com.zht.http.network.HttpRequest;
 import com.zht.http.utils.Utils;
 
+import java.io.IOException;
 import java.net.URI;
 
 public class HttpRequestProvider {
@@ -17,7 +18,7 @@ public class HttpRequestProvider {
        }
     }
 
-    public HttpRequest getHttpRequest(URI uri, HttpMethod method){
+    public HttpRequest getHttpRequest(URI uri, HttpMethod method) throws IOException {
         return httpRequestFactory.createHttpRequest(uri,method);
     }
 

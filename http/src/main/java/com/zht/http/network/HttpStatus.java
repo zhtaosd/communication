@@ -43,6 +43,7 @@ public enum HttpStatus {
     GATEWAY_TIMEOUT(504, "Gateway Timeout"),
     HTTP_VERSION_NOT_SUPPORTED(505, "HTTP Version Not Supported ");
 
+
     private int mCode;
     private String mMessage;
 
@@ -58,5 +59,12 @@ public enum HttpStatus {
             }
         }
         return null;
+    }
+    public boolean isSuccess(){
+        int value = mCode/100;
+        if(value == 2){
+            return true;
+        }
+        return false;
     }
 }

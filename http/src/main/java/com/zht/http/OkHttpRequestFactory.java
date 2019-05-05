@@ -1,7 +1,6 @@
 package com.zht.http;
 
 import com.zht.http.network.HttpMethod;
-import com.zht.http.network.HttpRequest;
 
 import java.net.URI;
 import java.util.concurrent.TimeUnit;
@@ -39,7 +38,7 @@ public class OkHttpRequestFactory implements HttpRequestFactory {
     }
 
     @Override
-    public HttpRequest createHttpRequest(URI uri, HttpMethod method) {
+    public OriginHttpRequest createHttpRequest(URI uri, HttpMethod method) {
         return new OkHttpRequest(mClient,method,uri.toString());
     }
 }

@@ -46,7 +46,7 @@ public abstract class AbstractHttpResponse implements HttpResponse {
         return false;
     }
 
-    protected abstract InputStream getBodyInternal();
+    protected abstract InputStream getBodyInternal() throws IOException;
 
     protected abstract void closeInternal();
 }

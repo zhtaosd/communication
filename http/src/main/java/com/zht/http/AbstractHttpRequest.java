@@ -53,7 +53,7 @@ public abstract class AbstractHttpRequest implements HttpRequest {
         return response;
     }
 
-    protected abstract HttpResponse executeInternal(HttpHeader mHeader);
+    protected abstract HttpResponse executeInternal(HttpHeader mHeader) throws IOException;
 
     protected abstract OutputStream getBodyOutputStream();
 }
